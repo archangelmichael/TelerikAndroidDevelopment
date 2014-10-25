@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mediaplayer.SoundActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/song_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/sound_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/sound"
+        android:src="@drawable/sound" />
+
+    <ImageButton
+        android:id="@+id/previous_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/next_button"
+        android:layout_toLeftOf="@+id/title"
+        android:contentDescription="@string/previous"
+        android:src="@drawable/previous" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/next_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/play"
+        android:src="@drawable/play" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sound_button" />
+
+    <ImageButton
+        android:id="@+id/next_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/seek_bar"
+        android:layout_toEndOf="@+id/title"
+        android:layout_toRightOf="@+id/title"
+        android:contentDescription="@string/next"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/stop_button"
+        android:visibility="invisible"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/next_button"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/play"
+        android:src="@drawable/stop" />
+
+</RelativeLayout>
