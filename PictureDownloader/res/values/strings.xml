@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PictureDownloader</string>
+    <string name="action_settings">Click me</string>
+    <string name="click_button_text">Click To Load Image</string>
+
+    <string name="load_image">Load Image</string>
+    <string name="no_image">Image Unavailable</string>
+</resources>
