@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intro</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="original_text_input">Original Text Is Shown!</string>
+    <string name="new_text_input">Enter New Text Here!</string>
+    
+    <string name="change_text_btn">Change Text</string>
+    <string name="view_history_btn">View Changes History</string>
+    
+    
+    <string name="title_textmessage_list">Text Changes</string>
+    <string name="title_textmessage_detail">Change Details</string>
+    
+
+</resources>
