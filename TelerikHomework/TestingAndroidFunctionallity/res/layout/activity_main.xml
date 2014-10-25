@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.testingandroidfunctionallity.MainActivity" >
+
+    <Button
+        android:id="@+id/show_popup"
+        style="@style/ButtonStyle"
+        android:onClick="popUpMenu"
+        android:text="@string/show_popup" />
+
+    <ImageView
+        android:id="@+id/tiger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_popup"
+        android:layout_below="@+id/show_popup"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/start_service"
+        style="@style/ButtonStyle"
+        android:layout_alignLeft="@+id/tiger"
+        android:layout_below="@+id/tiger"
+        android:onClick="startService"
+        android:text="@string/start_service_text" />
+
+    <Button
+        android:id="@+id/stop_service"
+        style="@style/ButtonStyle"
+        android:layout_alignBaseline="@+id/start_service"
+        android:layout_alignBottom="@+id/start_service"
+        android:layout_toRightOf="@+id/start_service"
+        android:onClick="stopService"
+        android:text="@string/stop_service_text" />
+
+    <Button
+        android:id="@+id/draw_on_canvas_button"
+        style="@style/ButtonStyle"
+        android:layout_alignLeft="@+id/stop_service"
+        android:layout_centerVertical="true"
+        android:onClick="drawOnCanvas"
+        android:text="@string/draw_on_canvas_text" />
+
+    <Button
+        android:id="@+id/inflate_view_button"
+        style="@style/ButtonStyle"
+        android:layout_alignBaseline="@+id/draw_on_canvas_button"
+        android:layout_alignBottom="@+id/draw_on_canvas_button"
+        android:layout_alignRight="@+id/start_service"
+        android:onClick="inflateView"
+        android:text="@string/inflate_view_text" />
+
+</RelativeLayout>
